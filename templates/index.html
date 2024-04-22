@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Каталог №2</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/people.png') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('addperson') }}">Додати запис</a></li>
+                    <li><a href="{{ url_for('login') }}">Логін</a></li>
+                    <li><a href="{{ url_for('about') }}">Про нас</a></li>
+                </ul>
+            </header>
+
+            <main class="content">
+                <div class="slider-block">
+                    <div class="image-block"></div>
+                    <div class="text-block">
+                        <p class="slide-text"></p>
+                    </div>
+                    <button class="prev-button" aria-label="Попередній слайд">&lt;</button>
+                    <button class="next-button" aria-label="Наступний слайд">&gt;</button>
+                </div>
+            </main>
+
+        </div>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

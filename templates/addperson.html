@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Додати запис</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/addp.css') }}">
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/people.png') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Головна</a></li>
+                    <li><a href="{{ url_for('login') }}">Логін</a></li>
+                    <li><a href="{{ url_for('about') }}">Про нас</a></li>
+                </ul>
+            </header>
+
+            <main class="content">
+                <div class="addperson">
+                    <h1 class="addperson-title">Створення запису</h1>
+
+                    <form class="addperson-form" method="post" enctype="multipart/form-data">
+
+                        <div class="addperson-form-group">
+                            <label for="surname">Прізвище</label>
+                            <input type="text" id="surname" name="surname" required><br><br>
+                        </div>
+
+                        <div class="addperson-form-group">
+                            <label for="name">Ім'я</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                        </div>
+
+                        <div class="addperson-form-group">
+                            <label for="middle_name">По батькові</label>
+                            <input type="text" id="middle_name" name="middle_name"><br><br>
+                        </div>
+
+                        <div class="addperson-form-group">
+                            <label for="age">Вік</label>
+                            <input type="number" id="age" name="age" required><br><br>
+                        </div>
+
+                        <div class="addperson-form-group">
+                            <label for="occupation">Рід занять</label>
+                            <input type="text" id="occupation" name="occupation" required><br><br>
+                        </div>
+
+                        <div class="addperson-form-group">
+                            <label for="specialization">Спеціалізація</label>
+                            <input type="text" id="specialization" name="specialization" required><br><br>
+                        </div>
+
+                        <div class="addperson-form-group">
+                            <label for="photo">Зображення</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required><br>
+                        </div>
+
+                        <button type="submit" class="addperson-form-button">Додати</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

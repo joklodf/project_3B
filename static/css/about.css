@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 1%;
+    background: linear-gradient(150deg, #e6d3f9 0%, #e6d3f9 50%, #cea0f1 50%, #cea0f1 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0 40px;
+    flex-direction: row;
+}
+
+.navbar ul li a {
+    font-family: "Reddit Mono", monospace;
+    font-size: 28px;
+    color: darkmagenta;
+    font-weight: 800;
+    font-style: inherit;
+    text-decoration: none;
+    background: linear-gradient(white 0 0) bottom /var(--t, 0) 2px no-repeat;
+    transition: 0.5s;
+}
+.navbar ul li a:hover {
+    --t: 100%;
+}
+
+.content{
+    width: 72%;
+    margin: 54px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #7B0BA8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Reddit Mono", monospace;
+}
+
+.about{
+    width: 660px;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: "Reddit Mono", monospace;
+}
+
+.about-title{
+    text-align: center;
+    margin: 0 0 38px 0;
+    font-weight: normal;
+    color: #7B0BA8;
+}
+
+.about-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.khmnk-block,
+.dvdnk-block{
+    width: 46%;
+    height: 100%;
+    box-shadow: 0 3px 12px grey ;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.p{
+    font-size: 24px;
+    font-family: "Reddit Mono", monospace;
+    text-align: center;
+    color: rebeccapurple;
+
+}
+
+.khmnk-block button,
+.dvdnk-block button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.btn-tg{
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "Reddit Mono", monospace;
+    padding: 14px;
+    background: white;
+    color: #27A5E7;
+    border: 2px solid #27A5E7;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-gml{
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Reddit Mono", monospace;
+    padding: 14px;
+    cursor: pointer;
+    color: #EC7063;
+    border: 2px solid #EC7063;
+    background: white;
+    transition: 0.5s;
+}
+
+.btn-tg:hover,
+.btn-tg:focus{
+    background: #27A5E7;
+    border: 2px solid #27A5E7;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-gml:hover,
+.btn-gml:focus{
+    background: #EC7063;
+    border: 2px solid #EC7063;
+    color: white;
+    transition: 0.5s;
+}
+
+.hint-gml {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    color: white;
+    padding: 14px;
+    position: fixed;
+    font-weight: normal;
+    font-family: "Reddit Mono", monospace;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    animation: fadeInOut 3s ease;
+    display: none;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

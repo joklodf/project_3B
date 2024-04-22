@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 1%;
+    background: linear-gradient(150deg, #e6d3f9 0%, #e6d3f9 50%, #cea0f1 50%, #cea0f1 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0 40px;
+    flex-direction: row;
+}
+
+.navbar ul li a {
+    font-family: "Reddit Mono", monospace;
+    font-size: 28px;
+    color: darkmagenta;
+    font-weight: 800;
+    font-style: inherit;
+    text-decoration: none;
+    background: linear-gradient(white 0 0) bottom /var(--t, 0) 2px no-repeat;
+    transition: 0.5s;
+}
+.navbar ul li a:hover {
+    --t: 100%;
+}
+
+.content {
+    margin-top: 34px;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    box-shadow: 0 4px 16px #7B0BA8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 360px;
+    padding: 32px;
+    border-radius: 10px;
+    font-family: "Reddit Mono", monospace;
+
+}
+
+.form-input,
+.form-button {
+    font-family: "Reddit Mono", monospace;
+    font-size: 16px;
+}
+
+.form-title{
+    text-align: center;
+    margin: 0 0 28px 0;
+    font-weight: normal;
+    color: #7B0BA8;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+.form-label{
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+    color: #D2B4DE;
+}
+
+.form-input{
+    width: 100%;
+    padding:0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    outline: none;
+    transition: 0.5s;
+}
+
+.form-input:focus{
+    border-bottom: 1px solid darkmagenta;
+    transition: 0.3s;
+}
+
+.form-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #BB8FCE;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background: white;
+    border: 2px solid #BB8FCE;
+    width: 68%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-button:focus,
+.form-button:hover{
+    background: rebeccapurple;
+    color: white;
+    border: 2px solid rebeccapurple;
+}
+
+

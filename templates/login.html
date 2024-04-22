@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авторизація</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/people.png') }}"> <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Головна</a></li>
+                    <li><a href="{{ url_for('addperson') }}">Додати записа</a></li>
+                    <li><a href="{{ url_for('about') }}">Про нас</a></li>
+                </ul>
+            </header>
+
+            <main class="content">
+                <form class="form">
+                    <h1 class="form-title">Авторизація</h1>
+
+                    <div class="form-group">
+                        <input type="text" class="form-input">
+                        <label class="form-label">Ім'я користувача</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-input">
+                        <label class="form-label">Пароль</label>
+                    </div>
+
+                    <button type="submit" class="form-button">Вхід</button>
+                </form>
+            </main>
+
+        </div>
+
+    </body>
+</html>

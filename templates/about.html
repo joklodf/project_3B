@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Про нас</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/people.png') }}"> <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Головна</a></li>
+                    <li><a href="{{ url_for('login') }}">Логін</a></li>
+                    <li><a href="{{ url_for('addperson') }}">Додати запис</a></li>
+                </ul>
+            </header>
+
+            <main>
+                <div class="content">
+                    <div class="about">
+                        <h1 class="about-title">Сайт створили</h1>
+
+                        <div class="about-group">
+                            <div class="khmnk-block">
+                                <p class="p">Хоменко<br>Кіріл<br>Олегович</p>
+                                <button class="btn-tg" onclick="window.open('https://t.me/kkiryxa', '_blank')">Telegram</button>
+                                <button type="button" class="btn-gml" id="khmnk-gmail">Gmail</button>
+                            </div>
+
+                            <div class="dvdnk-block">
+                                <p class="p">Давиденко<br>Кірілл<br>Сергійович</p>
+                                <button class="btn-tg" onclick="window.open('https://t.me/krennxkn', '_blank')">Telegram</button>
+                                <button class="btn-gml" id="dvdnk-gmail">Gmail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="hint-gml" id="hint">Адресу електронної пошти скопійовано. Будь-ласка, перейдіть на Gmail та напишіть нам.</div>
+        </div>
+        <script src="{{ url_for('static', filename='js/about.js') }}"> </script>
+    </body>
+</html>

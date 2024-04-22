@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 1%;
+    background: linear-gradient(150deg, #e6d3f9 0%, #e6d3f9 50%, #cea0f1 50%, #cea0f1 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0 40px;
+    flex-direction: row;
+}
+
+.navbar ul li a {
+    font-family: "Reddit Mono", monospace;
+    font-size: 28px;
+    color: darkmagenta;
+    font-weight: 800;
+    font-style: inherit;
+    text-decoration: none;
+    background: linear-gradient(white 0 0) bottom /var(--t, 0) 2px no-repeat;
+    transition: 0.5s;
+}
+.navbar ul li a:hover {
+    --t: 100%;
+}
+
+.content {
+    margin-top: 34px;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #7B0BA8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-block{
+    width: 98%;
+    height: 98%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.image-block{
+    width: 48%;
+    height: 88%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-block{
+    width: 50%;
+    height: 88%;
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+}
+
+.slide-text{
+    font-size: 22px;
+    margin-top: 70px;
+    font-family: "Reddit Mono", monospace;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-80%);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 64px;
+    padding: 20px 35px 20px 20px;
+}
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.prev-button {
+    left: 16%;
+}
+
+.next-button {
+    right: 16%;
+}

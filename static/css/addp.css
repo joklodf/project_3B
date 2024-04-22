@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 1%;
+    background: linear-gradient(150deg, #e6d3f9 0%, #e6d3f9 50%, #cea0f1 50%, #cea0f1 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0 40px;
+    flex-direction: row;
+}
+
+.navbar ul li a {
+    font-family: "Reddit Mono", monospace;
+    font-size: 28px;
+    color: darkmagenta;
+    font-weight: 800;
+    font-style: inherit;
+    text-decoration: none;
+    background: linear-gradient(white 0 0) bottom /var(--t, 0) 2px no-repeat;
+    transition: 0.5s;
+}
+.navbar ul li a:hover {
+    --t: 100%;
+}
+
+.content{
+    width: 72%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 16px #7B0BA8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Reddit Mono", monospace;
+}
+
+.addperson{
+    width: 660px;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: "Reddit Mono", monospace;
+}
+
+.addperson-title{
+    text-align: center;
+    margin: 0 0 18px 0;
+    font-weight: normal;
+    color: #7B0BA8;
+}
+
+.addperson-form{
+    font-family: "Reddit Mono", monospace;
+    font-size: 18px;
+    color: #7B0BA8;
+    box-shadow: 0 3px 12px grey ;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.addperson-form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.addperson-form-group label {
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.addperson-form-group input[type="text"],
+.addperson-form-group input[type="number"]{
+    flex: 1;
+    height: 34px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.addperson-form-group input[type="file"]{
+    flex: 1;
+    padding: 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+
+.addperson-form-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #BB8FCE;
+    cursor: pointer;
+    transition: 0.5s;
+    background: white;
+    border: 2px solid #BB8FCE;
+    width: 48%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-family: "Reddit Mono", monospace;
+    margin-top: 38px;
+}
+
+.addperson-form-button:hover,
+.addperson-form-button:focus{
+    background: rebeccapurple;
+    color: white;
+    border: 2px solid rebeccapurple;
+}
