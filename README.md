@@ -1,5 +1,7 @@
 # Web project / Каталог осіб
 
+# Хоменко К. - Давиденко К.
+
 ## Залежності:
 * flask
 * flask-sqlalchemy
